@@ -1,0 +1,167 @@
+                                                    PENJELASAN TUGAS TOKO ONLINE
+
+Class Barang {
+- Memiliki tiga Variable Bertipe Arraylist
+ 1.namaBarang
+ 2.Stok
+ 3.Harga 
+variable tsb digunakan untuk menyimpan informasi tentang barang yang tersedia di Toko
+
+-Konstruktor kelas Barang  Tiga item di tambahkan ke dalam ArrayList dengan nilai awal setiap barang
+
+- 4 Method setter 
+  1.setNamaBarang, setHarga , setStok, editStok'
+
+- ada 4 Method Getter 
+  1. getNamaBarang ,
+  2. get Harga, 
+  3. getJmlBarang 
+  4. getStok
+  getNamaBarang dan getHarga digunakan untuk mendapatkan nama dan harga dari suatu barang berdasarkan idBarang. getStok digunakan untuk mendapatkan stok barang berdasarkan idBarang. getJmlBarang digunakan untuk mendapatkan jumlah total barang yang tersedia dalam toko.
+  
+}
+
+Class Karyawan {
+- Memiliki 4 variable bertipe Array List
+ 1. namaKar
+ 2. Alamat
+ 3. telepom
+ 4. Jabatan
+ Variabel ini digunakan untuk menyimpan informasi tentang karyawan yang terdaftar 
+ dalam suatu  sistem.
+- Dalam konstruktor kelas Karyawan, satu karyawan ditambahkan ke dalam ArrayList dengan nilai awal untuk setiap atribut.
+
+-4 Method Setter 
+ 1.setNama, 
+ 2.setAlamat, 
+ 3.setTelepon,  
+ 4.setJabatan
+
+- 5 method getter = 
+1. getNama, 
+2. getAlamat, 
+3. getTelepon, 
+4. getJabatan, 
+5. getJmlKaryawan. 
+
+getNama, getAlamat, dan getTelepon digunakan untuk mendapatkan nama, alamat, dan nomor telepon karyawan berdasarkan idKaryawan. getJabatan digunakan untuk mendapatkan jabatan karyawan berdasarkan idKaryawan. 
+}
+
+Class Laporan {
+
+. laporan(Barang barang), digunakan untuk mencetak tabel barang yang berisi daftar nama barang, 
+stok, dan harga setiap barang pada objek Barang yang diberikan sebagai parameter. 
+
+Pertama, variabel x diinisialisasi dengan jumlah barang menggunakan metode getJmlBarang() dari objek barang. 
+
+Kemudian, menggunakan loop for, data dari setiap barang pada objek barang dicetak pada konsol menggunakan metode getNamaBarang(int idBarang), getStok(int idBarang), dan getHarga(int idBarang).
+
+}
+
+Class Member {
+ Kelas Member merupakan kelas implementasi dari interface User yang memiliki beberapa        atribut dan method
+
+namaMember, alamat, telepon, dan saldo adalah atribut dari kelas Member yang bertipe ArrayList. Atribut ini menyimpan informasi nama, alamat, nomor telepon, dan saldo dari setiap member
+
+Constructor Member merupakan constructor default yang memuat informasi dari dua buah objek Member yang sudah diinisialisasi. Informasi tersebut disimpan pada atribut namaMember, alamat, telepon, dan saldo
+
+Method setSaldo digunakan untuk menambahkan saldo baru pada atribut saldo. Method ini menerima satu parameter berupa saldo yang akan ditambahkan.
+
+Method getSaldo digunakan untuk mengambil saldo dari seorang member. Method ini menerima satu parameter berupa ID member dan mengembalikan nilai saldo dari member dengan ID tersebut.
+
+Method edtisaldo digunakan untuk mengedit saldo dari seorang member.
+Method getJumlMember digunakan untuk mengambil jumlah member yang terdaftar. 
+
+Method setNama, setAlamat, dan setTelepon merupakan implementasi dari method yang ada pada interface User. Method ini digunakan untuk menambahkan informasi nama, alamat, dan nomor telepon dari seorang member.
+
+Method getNama, getAlamat, dan getTelepon merupakan implementasi
+}
+
+Class Transaksi {
+  kelas Transaksi yang memiliki beberapa atribut dan method untuk melakukan transaksi      belanja menggunakan barang dan saldo dari member.
+
+3 ArrayList mengunakan tipe data Integer =
+
+1. Id Barang
+2. Banyak
+3. Id member 
+
+Pada method prosesTransaksi, digunakan untuk melakukan transaksi belanja. Pertama-tama, akan diminta untuk memasukkan ID Member untuk melakukan transaksi.
+
+bjek Barang untuk mendapatkan nama barang dan getHarga dari objek Barang untuk mendapatkan harga barang. 
+
+pada ArrayList idBarang dan setiap jumlah barang yang dimasukkan akan disimpan pada ArrayList banyak. Setelah selesai memasukkan seluruh kode barang dan jumlahnya, program akan menampilkan seluruh daftar belanja, yaitu nama barang, jumlah yang dibeli, harga satuan barang, dan total harga.
+
+}
+
+Interface User{
+   Codingan tsb adalah sebuah interface User 
+   Interface User mendefinisikan beberapa method yang harus diimplementasikan oleh kelas-    kelas yang mengimplementasikan interface ini. Method-method tersebut adalah:
+
+1. void setNama(String nama) : method ini digunakan untuk mengatur nama pengguna.
+2. void setAlamat(String Alamat) : method ini digunakan untuk mengatur alamat pengguna.
+3. void setTelepon(String Telepon) : method ini digunakan untuk mengatur nomor telepon     pengguna.
+4. String getNama(int id) : method ini digunakan untuk mendapatkan nama pengguna dengan id tertentu.
+5. String getAlamat(int id) : method ini digunakan untuk mendapatkan alamat pengguna dengan id tertentu.
+6. String getTelepon(int id) : method ini digunakan untuk mendapatkan nomor telepon  pengguna dengan id tertentu.
+
+}
+
+Class Hasil {
+   Public Static void main[Args]{
+ deklarasi dan inisialisasi objek dari beberapa class yang terlibat dalam program, yaitu:
+
+Barang
+Karyawan
+Laporan
+Member
+Transaksi
+
+
+ kemudian, kita memanggil beberapa method dari objek-objek tersebut untuk menghasilkan laporan-laporan terkait data yang disimpan dalam masing-masing objek.
+
+Setelah itu, terdapat penanganan exception yang akan menampilkan pesan error apabila terjadi exception selama program dijalankan.
+
+Dalam ringkasan, program ini bertujuan untuk menghasilkan laporan-laporan terkait data barang, karyawan, member, transaksi, dan lainnya.
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
